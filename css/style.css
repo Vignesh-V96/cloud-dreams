@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+ scroll-behavior:smooth; 
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;
+}
+
+li{
+  list-style: none;
+  margin-bottom: 9px;
+}
+.bd-main{
+  background: #01d9fc;
+}
+
+/*-----------------topbar------------*/
+header{
+  background: #01d9fc;
+  position: relative;
+}
+.nav-item{
+  padding: 0px 20px;
+  
+}
+@media screen and (max-width:992px){
+  .collapse{
+  border-top: none!important;
+  
+}
+.nav-item:hover{
+  background: white ;
+ }
+.nav-link:hover{
+   color: black!important;
+}
+}
+.navbar-nav li a::before{
+  content: "";
+  position: absolute;
+  top: -5%;
+  bottom:;
+  width: 0%;
+  height: 5px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.navbar-nav li a:hover::before{
+  width: 5%;
+}
+
+.collapse{
+  border-top: 0.5px solid white;
+  position: relative;
+}
+.nav-link{
+   color: white!important;
+   font-weight: 400!important;
+   font-size: 18px;
+
+}
+#hero{
+  width: 100%;
+  height: 500px;
+  background:url('../images/banner.png');
+  background-size:100% 100%;
+  z-index: 4;
+}
+ .txt_one{
+  font-weight:300;
+}
+.txt_two{
+  font-weight: 800;
+  font-size: 44px;
+}
+#hero .txt{
+  padding: 9% 0% 0% 7%;
+}
+
+
+/*----------------------------*/
+#tours{
+  
+  background: url('../images/background.jpg');
+  background-size: 100% 100%;
+  padding: 50px 0px;
+ 
+  z-index: 0;
+}
+.dark{
+  font-weight: 700!important;
+}
+#tours h3{
+  font-weight: 300;
+}
+#tours button{
+  background: #0af4ff;
+}
+#tours .fas{
+  color: #0af4ff!important;
+  margin-right: 8px;
+}
+
+/*--------------------*/
+#packages{
+  background: url('../images/ocean.jpg');
+  height: auto;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  padding: 70px 0px;
+}
+
+#packages .fas{
+  font-size: 40px;
+}
+
+.card .card_line{
+  width: 70px;
+  height: 4px;
+  margin: 0px auto;
+  display: block;
+  background: white;
+  transform: translateY(-2px);
+  margin-bottom: 5px;
+}
+/*------------------------------*/
+#tour_packages{
+  padding: 100px 0px;
+  background:url('../images/background.jpg');
+  background-size: 100% 100%;
+}
+
+#tour_packages .btn{
+  background: #01d8fc;
+}
+
+.primary{
+  color: #01d8fc;
+  font-weight: 700;
+}
+
+/*--------------cars--------------------*/
+
+#cars{
+  width: 100%;
+  height:auto;
+  background: url('../images/background.jpg');
+  background-size: 100% 100%;
+  padding: 60px 0px;
+  position: relative;
+}
+#cars h2{
+  font-size: 35px;
+
+}
+.cars{
+  border: 2px solid #01d8fc;
+  padding: 90px 40px 90px 40px;
+
+}
+
+
+
+
+/*----------------------------------------------*/
+#rtour{
+  background: url('../images/fether.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  
+  padding: 100px 0px;
+  
+}
+
+#rtour .far{
+  font-size: 60px;
+}
+#rtour .btn{
+  border-radius: 10px;
+}
+
+/*------------------------------*/
+#gallery{
+  padding: 50px 0px;
+  background: url('../images/background.jpg');
+  background-size: 100% 100%;
+
+}
+/*-------------------------------------*/
+
+#contact{
+  padding: 40px 0px;
+  background: url('../images/background.jpg');
+  background-size: 100% 100%;
+  position: relative
+}
+.form{
+  
+  margin-top: 60px;
+  padding: 50px 30px;
+  position: relative;
+
+}
+.form input{
+  width: 100%;
+  margin-bottom: 9px;
+  padding: 5px;
+}
+
+
+.form::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 211, 255, 0.4);
+}
+textarea{
+  width: 100%;
+}
+
+/*-------------------------footer---------------------*/
+#footer{
+  padding: 35px 10px;
+  position: relative;
+}
+#footer::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(12,9,16,0.9);
+}
+#footer a{
+  color: white!important;
+}
